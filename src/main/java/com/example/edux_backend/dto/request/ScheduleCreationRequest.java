@@ -1,0 +1,21 @@
+package com.example.edux_backend.dto.request;
+
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class ScheduleCreationRequest {
+    Long id;
+    String subject;
+    String startTime;
+    String roomName;
+    Long branch;
+    Long teacher;
+    Long totalStudent;
+
+
+}
